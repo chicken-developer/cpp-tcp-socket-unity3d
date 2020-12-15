@@ -29,8 +29,7 @@ bool CTcpListener::Init()
 void CTcpListener::Send(int clientSocket, std::string msg)
 {
 	send(clientSocket, msg.c_str(), msg.size() + 1, 0);
-	cout << "Send message " << msg << endl;
-
+	cout << "Server have sent: " << msg << "\n";
 }
 
 //The main process lopp
